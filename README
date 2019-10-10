@@ -1,0 +1,27 @@
+Projet Molécule et Toon Shading
+
+Deux nouvelles classes on été créées : Molecule et Sphere_parfaite
+
+Sphere_parfaite:
+Inspirée de Cube, on génère un VBO contenant uniquement les sommets d'un cube centré en 0 et de coté 2.
+
+Molécule:
+Nous créons une molécule de TNT. Une molécule est définie par la position du centre de chacun de ses atomes, le rayon de chacun de ses atomes et la couleur de chacun de ses atomes.
+Nous créons également des positions et des orientations supplémentaires pour les liaisons entre les atomes.
+Enfin nous redimensionnons la taille de la bounding box afin de visualiser la molécule en entier.
+
+
+
+Les shaders:
+Nous utilisons un vertex et un fragment shader (simple.vertcube et simple.fragcube) pour les liaisons entre les atomes. Ils sont très simples. 
+
+
+
+Deux autres shaders sont utiliser pour la molécule.
+
+Un permettant d'obtenir une sphere parfaite avec une illumination de Phong. : simple.frag
+Un autre permettant d'obtenir une sphere parfaite avec un Toon shading. : complexe.frag
+
+On peut passer de l'un à l'autre avec les flèches du bas et du haut.
+
+
